@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+    color: #525252;
+    /* background-color: #70a9e9; */
+    padding: 20px 0;
+}
+
+.menu{
+    /* border: 2px solid #348bef; */
+    /* background-color: #5ea4f3; */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+.login{
+    margin-left: 20px;
+}
+.header-container{
+    color: #5995da;
+    /* background-color: #d6e9fe; */
+    display: flex;
+    justify-content: center;
+}
+.header{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* align-items: stretch; */
+}
+/* .social, .logo, .subscribe{
+    border: 1px solid #5995da;
+} */
+
+.logo{
+    align-self: flex-start;
+    margin-top: 10px;
+}
+.social, .subscribe{
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.photo-grid-container{
+    display: flex;
+    /* background-color: #bcd4ef; */
+    justify-content: center;
+}
+.photo-grid{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.first-item{
+    order: 1;
+}
+.last-item{
+    order: -1;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item{
+    /* border: 0px 1px 1px 1px  solid #fff; */
+    /* background-color: #d6e9fe; */
+    height: 50px;
+    flex: 1;
+}
+.footer-one, .footer-three{
+    /* background-color: #5995da; */
+    flex: initial;
+    width: 100px;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(10px);
+    transform: rotate(-1000deg) scale(0.1);
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+}
+.show{
+    opacity: 1;
+    transform: rotate(0deg) scale(1.0);
+    filter: blur(0px);
+}
+/* .photo-grid-item:nth-child(2){
+    transition-delay: 200ms;
+}
+.photo-grid-item:nth-child(3){
+    transition-delay: 400ms;
+}
+.photo-grid-item:nth-child(4){
+    transition-delay: 600ms;
+}
+.photo-grid-item:nth-child(1){
+    transition-delay: 700ms;
+} */
